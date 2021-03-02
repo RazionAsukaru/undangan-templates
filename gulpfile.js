@@ -10,7 +10,7 @@ function scssTask() {
     return src('app/scss/style.scss', {sourcemaps: true})
         .pipe(sass())
         .pipe(postcss([cssnano]))
-        .pipe(dest('dist', {sourcemaps: '.'}));
+        .pipe(dest('dist/css', {sourcemaps: '.'}));
 }
 
 // Javascipt Task
