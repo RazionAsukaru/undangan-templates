@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"script.js"}
+{"version":3,"sources":["script.js"],"names":["$","document","ready","this","scrollTop"],"mappings":"AAAAA,EAAEC,UAAUC,OAAM,WACdF,EAAEG,MAAMC,UAAU","file":"script.js"}
