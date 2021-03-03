@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const terser = require('gulp-terser');
+const browserify = require('gulp-browserify');
 const browsersync = require('browser-sync').create();
 
 // Sass Task
@@ -16,6 +17,7 @@ function scssTask() {
 // Javascipt Task
 function jsTask() {
     return src('app/js/script.js', {sourcemaps: true})
+        .pipe(browserify({ debug: true }))
         .pipe(terser())
         .pipe(dest('dist', {sourcemaps: '.'}));
 }
