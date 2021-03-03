@@ -16,7 +16,7 @@
             <video loop muted autoplay style="filter: brightness(70%);">
                 <source src="assets/video/bg video.mp4" type="video/mp4">
             </video>
-            <div id="center-container">
+            <div class="center-container">
                 <img src="assets/images/logo.png" alt="logo">
             </div>
         </div>
@@ -41,12 +41,12 @@
         </div>
     </section>
     <section class="section-fs" id="section_4">
-        <div id="center-container" style="width: 60%;">
-            <div id="gmap">
+        <div class="center-container" style="width: 60%;">
+            <h2 id="gmap">
                 Google Maps
-            </div>
+            </h2>
         </div>
-        <div id="center-container" style="width: 60%;">
+        <div class="center-container" style="width: 60%;">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.723299338797!2d107.038909!3d-6.206765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb11509fdb438cca!2sTOKO%20SEPEDA%20LISTRIK%20SAEFUL%20ASKAR%20(SELIS)!5e0!3m2!1sid!2sid!4v1599491502128!5m2!1sid!2sid"
                 width="100%" height="500px" frameborder="0" style="border:0; border-radius: 12px;" aria-hidden="false"></iframe>
@@ -55,12 +55,22 @@
     <section class="section-fs" id="section_5">
         <div id="video-container">
             <img src="assets/images/section_5.jpg" alt="foto" style="width: 100%;">
-            <!-- <video loop muted autoplay style="filter: brightness(70%);">
-                <source src="assets/images/section_5.jpg" type="video/mp4">
-            </video> -->
-            <div id="center-container">
-                <!-- <img src="assets/images/logo.png" alt="logo"> -->
-                some
+            <div class="center-container">
+                <p style="font-size: 40px; margin-bottom: 30px; text-align: center;">Akad Ceremony Countdown</p>
+                <div style="display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-evenly;">
+                    <div style="display: flex; flex-direction: column; flex: 1; margin: 15px;">
+                        <p id="counter_days" style="font-size: 40px; margin-bottom: 0; margin-top: 0;">0</p>
+                        <p style="font-size: 32px; margin: 0;">Days</p></div>
+                    <div style="display: flex; flex-direction: column; flex: 1; margin: 15px;">
+                        <p id="counter_hours" style="font-size: 40px; margin-bottom: 0; margin-top: 0;">0</p>
+                        <p style="font-size: 32px; margin: 0;">Hours</p></div>
+                    <div style="display: flex; flex-direction: column; flex: 1; margin: 15px;">
+                        <p id="counter_minutes" style="font-size: 40px; margin-bottom: 0; margin-top: 0;">0</p>
+                        <p style="font-size: 32px; margin: 0;">Minutes</p></div>
+                    <div style="display: flex; flex-direction: column; flex: 1; margin: 15px;">
+                        <p id="counter_seconds" style="font-size: 40px; margin-bottom: 0; margin-top: 0;">0</p>
+                        <p style="font-size: 32px; margin: 0;">Seconds</p></div>
+                </div>
             </div>
         </div>
     </section>
