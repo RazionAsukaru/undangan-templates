@@ -1,3 +1,5 @@
+$primary-color: #936d58;
+
 html {
     font-size: 100%;
     box-sizing: border-box;
@@ -11,6 +13,8 @@ html {
 
 body {
     margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .section-fs {
@@ -48,26 +52,24 @@ body {
 #section_1 {
     background: url("../../assets/images/bg2-01.png") no-repeat;
     background-size: 100vw 100%;
-    // background-position: top center;
     margin-top: -4px;
+    color: $primary-color;
+    font-size: 28px;
 }
 
 #section_2 {
     background: url("../../assets/images/bg3-01.png") no-repeat;
     background-size: 100vw 100%;
-    // background-position: top center;
 }
 
 #section_3 {
     background: url("../../assets/images/bg4-01.png") no-repeat;
     background-size: 100vw 100%;
-    // background-position: top center;
 }
 
 #section_4 {
     background: url("../../assets/images/bg5-01.png") no-repeat;
     background-size: 100vw 100%;
-    // background-position: top center;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -100,7 +102,7 @@ body {
 
 #akad {
     position: absolute;
-    color: #936d58;
+    color: $primary-color;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -129,7 +131,7 @@ body {
         margin-top: 15px;
         border-color: transparent;
         border-radius: 4px;
-        background-color: #936d58;
+        background-color: $primary-color;
         color: #fff;
         cursor: pointer;
     }
@@ -139,6 +141,9 @@ body {
     text-align: center;
     margin-bottom: 632px;
     font-size: 40px;
-    color: #936d58;
+    color: $primary-color;
     font-weight: bold;
 }
+
+
+// Media query untuk res width 512px
