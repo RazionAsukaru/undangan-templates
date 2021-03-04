@@ -39,8 +39,9 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    min-width: 700px;
 
-    img {
+    #logo {
         height: auto;
         width: 60%;
     }
@@ -56,21 +57,26 @@ body {
     margin-top: -4px;
     color: $primary-color;
     font-size: 28px;
+    min-height: 1000px;
 }
 
 #section_2 {
     background: url("../../assets/images/bg3-01.png") no-repeat;
     background-size: 100vw 100%;
+    color: $primary-color;
+    min-height: 1000px;
 }
 
 #section_3 {
     background: url("../../assets/images/bg4-01.png") no-repeat;
     background-size: 100vw 100%;
+    min-height: 1000px;
 }
 
 #section_4 {
     background: url("../../assets/images/bg5-01.png") no-repeat;
     background-size: 100vw 100%;
+    min-height: 1000px;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -99,6 +105,7 @@ body {
 #section_5 {
     height: auto;
     color: #fff;
+    min-height: 1000px;
 }
 
 #section_6 {
@@ -152,5 +159,18 @@ body {
     font-weight: bold;
 }
 
+.mempelai {
+    width: 60%;
+}
+
+.name {
+    font-size: 32px;
+    margin: 5px;
+}
+
+.parent {
+    font-size: 28px;
+    margin: 5px;
+}
 
 // Media query untuk res width 512px
