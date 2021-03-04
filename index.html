@@ -97,23 +97,23 @@
         <div id="video-container">
             <img src="assets/images/bg6c-01.png" alt="foto" style="width: 100%;">
             <div class="center-container">
-                <p style="font-size: 40px; margin-bottom: 30px; text-align: center;">Akad Ceremony Countdown</p>
-                <div style="display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-evenly;">
-                    <div style="display: flex; flex-direction: column; flex: 1; margin: 15px;">
-                        <p id="counter_days" style="font-size: 40px; margin-bottom: 0; margin-top: 0;">0</p>
-                        <p style="font-size: 32px; margin: 0;">Days</p>
+                <p id="countdown_title">Akad Ceremony Countdown</p>
+                <div class="countdown">
+                    <div class="countdown_value">
+                        <p id="counter_days" class="value">0</p>
+                        <p class="value_label">Days</p>
                     </div>
-                    <div style="display: flex; flex-direction: column; flex: 1; margin: 15px;">
-                        <p id="counter_hours" style="font-size: 40px; margin-bottom: 0; margin-top: 0;">0</p>
-                        <p style="font-size: 32px; margin: 0;">Hours</p>
+                    <div class="countdown_value">
+                        <p id="counter_hours" class="value">0</p>
+                        <p class="value_label">Hours</p>
                     </div>
-                    <div style="display: flex; flex-direction: column; flex: 1; margin: 15px;">
-                        <p id="counter_minutes" style="font-size: 40px; margin-bottom: 0; margin-top: 0;">0</p>
-                        <p style="font-size: 32px; margin: 0;">Minutes</p>
+                    <div class="countdown_value">
+                        <p id="counter_minutes" class="value">0</p>
+                        <p class="value_label">Minutes</p>
                     </div>
-                    <div style="display: flex; flex-direction: column; flex: 1; margin: 15px;">
-                        <p id="counter_seconds" style="font-size: 40px; margin-bottom: 0; margin-top: 0;">0</p>
-                        <p style="font-size: 32px; margin: 0;">Seconds</p>
+                    <div class="countdown_value">
+                        <p id="counter_seconds" class="value">0</p>
+                        <p class="value_label">Seconds</p>
                     </div>
                 </div>
             </div>
@@ -122,26 +122,18 @@
     <section class="section-fs" id="section_6">
         <div class="center-container"  style="width: 100vw;">
             <h2 style="font-size: 65px;">OUR GALLERY</h2>
-            <section class="photo_gallery">
+            <section class="gallery">
                 <img src="assets/images/gallery-01.jpg" alt="gallery_photos_1">
                 <img src="assets/images/gallery-02.jpg" alt="gallery_photos_2">
                 <img src="assets/images/gallery-03.jpg" alt="gallery_photos_3">
                 <img src="assets/images/gallery-04.jpg" alt="gallery_photos_4">
                 <img src="assets/images/gallery-05.jpg" alt="gallery_photos_5">
             </section>
-            <section class="photo_gallery">
+            <section class="gallery">
                 <video src="assets/video/bg_video.mp4" poster="assets/images/video_poster_1.jpg"></video>
                 <video src="assets/video/bg_video.mp4" poster="assets/images/video_poster_2.jpg"></video>
             </section>
         </div>
-        <!-- <div class="center-container">
-            <div style="display: flex; flex-direction: column;">
-                <div style="display: flex;">
-                    <video src="assets/video/bg_video.mp4" poster="assets/images/video_poster_1.jpg"></video>
-                    <video src="assets/video/bg_video.mp4" poster="assets/images/video_poster_2.jpg"></video>
-                </div>
-            </div>
-        </div> -->
     </section>
     <script src="dist/script.js"></script>
     <script src="dist/countdown-counter.js"></script>
