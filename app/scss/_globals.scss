@@ -79,6 +79,17 @@ body {
     min-height: 1000px;
 }
 
+#section_5 {
+    height: auto;
+    color: #fff;
+}
+
+#section_6 {
+    color: $primary-color;
+    background-color: $secondary-color;
+}
+
+
 @media only screen and (max-width: 1366px) {
     #section_1 {
         background: url("../../assets/images/bg2-01.png") no-repeat 0% 50%;
@@ -100,18 +111,6 @@ body {
         background: url("../../assets/images/bg5-01.png") no-repeat 0% 50%;
         background-size: cover;
     }
-}
-
-#section_5 {
-    height: auto;
-    color: #fff;
-    min-height: 1000px;
-}
-
-#section_6 {
-    // height: auto;
-    color: $primary-color;
-    background-color: $secondary-color;
 }
 
 #akad {
