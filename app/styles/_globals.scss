@@ -90,6 +90,12 @@ body {
     height: auto;
 }
 
+#section_7 {
+    background: url("../../assets/images/bg_payment.jpg") no-repeat;
+    background-size: 100vw 100%;
+    min-height: 1000px;
+}
+
 #akad {
     position: absolute;
     color: $primary-color;
@@ -195,24 +201,103 @@ body {
     }
 }
 
+.covid {
+    color: $primary-color;
+    text-align: center;
+}
+
+#covid-title {
+    // text-align: center;
+    // margin-bottom: 632px;
+    font-size: 40px;
+    // color: $primary-color;
+    // font-weight: bold;
+}
+#covid-desc {
+}
+
+#payment {
+    max-width: 1000px;
+    width: 100%;
+    height: 350px;
+    background-color: #feefc6;
+    border-radius: 10px 10px 0 0;
+    border: 0.5px solid #ccc;
+    color: black;
+    padding: 20px;
+    text-align: left;
+}
+
+.tabs {
+    // --bar-color: red;
+    // --background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #e0e0e0);
+    color: black;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+}
+
+.tabs > .tab {
+    flex: 1;
+    display: flex;
+}
+
+.tab > .tab-input {
+    width: 0;
+    height: 0;
+    margin: 0;
+    display: none;
+}
+
+.tab > .tab-box {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.tab > .tab-input:checked + .tab-box {
+    background: #28b34a;
+    color: white;
+}
+
+.payment-input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    outline: none;
+    padding: 8px;
+}
+
+.payment-input:focus {
+    border: 1px solid #56b4ef;
+    box-shadow: 0px 0px 3px 1px #c8def0;
+}
+
+.payment-agreement {
+    margin: 20px calc(100% - 550px);
+    font-size: 13px;
+    text-align: center;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */
 }
 
 /* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
+@media only screen and (min-width: 1224px) {
+    /* Styles */
 }
 
 @media only screen and (max-width: 1224px) {
