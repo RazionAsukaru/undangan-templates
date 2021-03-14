@@ -153,10 +153,10 @@
             <p id="covid-desc">
                 Which very devastating for all of us, it impacting too on our special day. But we know that your prayer
                 and support for our wedding is the best and greatest gift of all. However, if you wish to honour us with
-                a gift, we have registered wit e-payment / e-wallet to make it easier for you.
+                a gift, we have registered with e-payment / e-wallet to make it easier for you.
             </p>
             <div id="payment">
-                <div>
+                <div  style="margin-bottom: 20px;">
                     <label>Jumlah</label>
                     <div id="container">
                         <div class="tabs">
@@ -182,32 +182,44 @@
                             </label>
                         </div>
                     </div>
+                    <div class="hidden others-nominal-group">
+                        <label for="others-nominal">Nominal</label>
+                        <input type="text" class="payment-input" name="others-nominal" style="border-radius: 2px">
+                    </div>
                 </div>
                 <form>
                     <label for="sender-name">Nama</label><br>
-                    <input type="text" class="payment-input" name="sender-name" style="border-radius: 2px">
+                    <input type="text" class="payment-input" name="sender-name" style="border-radius: 2px;">
                     <br>
-                    <input type="checkbox" name="anon" style="border-radius: 2px">
+                    <input type="checkbox" name="anon" style="border-radius: 2px;  margin-bottom: 20px;">
                     <label for="anon">Tampil Sebagai Anonim</label><br>
                     <label for="sender-message">Tulis Pesan</label><br>
                     <input type="text" class="payment-input" name="sender-message" style="border-radius: 2px">
                     <button type="submit"
-                        style="color: #fff; padding: 8px 30px; background-color: #28b34a; border-radius: 4px; border: 1px solid #ccc;">Lanjut</button>
+                        style="color: #fff; padding: 8px 30px; background-color: #28b34a; border-radius: 4px; border: 1px solid #ccc;  margin-top: 20px;">Lanjut</button>
                 </form>
             </div>
-            <div
-                style="border: 0.5px solid #ccc; height: 150px; bottom: 0; background-color: #fff; border-radius: 0 0 10px 10px; color: black;">
+            <div id="payment-support">
                 <div class="payment-agreement">
                     Pembayaran ini menggunakan sistem keamanan,
                     dan dikenakan biaya Admin: Rp 10.000 per transaksi.
                 </div>
-                <div class="payment-agreement" style="font-size: 12px;">
+                <div class="payment-agreement" style="font-size: 12px; margin-bottom: 0;">
                     Supported by:
+                </div>
+                <div class="payment-logo-group">
+                    <img id="logo" class="payment-logo" src="assets/images/bca.png" alt="logo_bca">
+                    <img id="logo" class="payment-logo" src="assets/images/mandiri.png" alt="logo_mandiri">
+                    <img id="logo" class="payment-logo" src="assets/images/bri.png" alt="logo_bri">
+                    <img id="logo" class="payment-logo" src="assets/images/bni.png" alt="logo_bni">
+                    <img id="logo" class="payment-logo" src="assets/images/gopay.png" alt="logo_gopay">
+                    <img id="logo" class="payment-logo" src="assets/images/shopeepay.png" alt="logo_shopeepay">
                 </div>
             </div>
         </div>
     </section>
     <script src="dist/js/script.js"></script>
+    <script src="dist/js/payment.js"></script>
     <script src="dist/js/countdown-counter.js"></script>
 </body>
 

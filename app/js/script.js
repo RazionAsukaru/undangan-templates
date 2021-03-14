@@ -58,6 +58,12 @@
     if (radioValue) {
       // alert("Your are a - " + radioValue);
       console.log(radioValue, typeof radioValue);
+      if (radioValue === 'others') {
+        $(".others-nominal-group").removeClass('hidden');
+      } else {
+        $(".others-nominal-group").addClass('hidden');
+      }
     }
   });
+  
 })();
