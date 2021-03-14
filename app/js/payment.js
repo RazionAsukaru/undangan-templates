@@ -1,11 +1,18 @@
 (function () {
-    const axios = require('axios');
+  const $ = require("jquery");
 
-    // axios.post("http://localhost:3333/api/auth/signin",{
-    //     "username": "admin",
-    //     "password": "Sadev123"
-    //   }).then(function(response){
-    //       console.log(response)
-    //   })
+  $("input[type='radio']").click(function () {
+    var radioValue = $("input[name='tab-input']:checked").val();
+    if (radioValue) {
+      if (radioValue === "others") {
+        $(".others-nominal-group").removeClass("hidden");
+      } else {
+        $(".others-nominal-group").addClass("hidden");
+      }
+    }
+  });
 
+  getById("payment-btn").click(function () {
+    // submitForm();
+  });
 })();

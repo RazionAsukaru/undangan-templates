@@ -8,10 +8,10 @@
   const counterSeconds = getById("counter_seconds");
 
   const year = 2021;
-  const month = 11;
-  const day = 4;
-  const hour = 12;
-  const minute = 30;
+  const month = 3;
+  const day = 20;
+  const hour = 16;
+  const minute = 00;
 
   let counterPassed = false;
 
