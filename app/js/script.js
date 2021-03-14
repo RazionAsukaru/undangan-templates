@@ -81,5 +81,18 @@
     return "desktop";
   };
 
-  console.log(getDeviceType());
+  console.log();
+  const deviceType = getDeviceType(); 
+  const spContainer = getById('smartphone-container');
+  const vidContainer = getById('video-container');
+  const countdownImg = getById('countdown-img');
+  if ( deviceType === "mobile" || deviceType === "tablet") {
+    spContainer.removeClass('hidden');
+    vidContainer.addClass('hidden');
+    countdownImg.addClass('hidden');
+  } else {
+    spContainer.addClass('hidden');
+    vidContainer.removeClass('hidden');
+  }
+  
 })();
