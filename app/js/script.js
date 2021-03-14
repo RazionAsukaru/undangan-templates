@@ -1,40 +1,12 @@
-function getById(id) {
-  return $(`#${id}`);
-}
-
-const getDeviceType = () => {
-  const ua = navigator.userAgent;
-  if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-    return "tablet";
-  }
-  if (
-    /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-      ua
-    )
-  ) {
-    return "mobile";
-  }
-  return "desktop";
-};
-
-const deviceType = getDeviceType();
-const spContainer = getById("smartphone-container");
-const vidContainer = getById("video-container");
-const countdownImg = getById("countdown-img");
-if (deviceType === "mobile" || deviceType === "tablet") {
-  spContainer.removeClass("hidden");
-  vidContainer.addClass("hidden");
-  countdownImg.addClass("hidden");
-} else {
-  spContainer.addClass("hidden");
-  vidContainer.removeClass("hidden");
-}
-
 (function () {
   const $ = require("jquery");
   const calendarBtn = getById("g-calendar-btn");
   const galleryVid1 = getById("gallery_vid_1");
   const galleryVid2 = getById("gallery_vid_2");
+
+  function getById(id) {
+    return $(`#${id}`);
+  }
 
   calendarBtn.click(function () {
     window.open(
@@ -86,11 +58,40 @@ if (deviceType === "mobile" || deviceType === "tablet") {
     if (radioValue) {
       // alert("Your are a - " + radioValue);
       console.log(radioValue, typeof radioValue);
-      if (radioValue === "others") {
-        $(".others-nominal-group").removeClass("hidden");
+      if (radioValue === 'others') {
+        $(".others-nominal-group").removeClass('hidden');
       } else {
-        $(".others-nominal-group").addClass("hidden");
+        $(".others-nominal-group").addClass('hidden');
       }
     }
   });
+
+  const getDeviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+      return "tablet";
+    }
+    if (
+      /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+        ua
+      )
+    ) {
+      return "mobile";
+    }
+    return "desktop";
+  };
+
+  const deviceType = getDeviceType(); 
+  const spContainer = getById('smartphone-container');
+  const vidContainer = getById('video-container');
+  const countdownImg = getById('countdown-img');
+  if ( deviceType === "mobile" || deviceType === "tablet") {
+    spContainer.removeClass('hidden');
+    vidContainer.addClass('hidden');
+    countdownImg.addClass('hidden');
+  } else {
+    spContainer.addClass('hidden');
+    vidContainer.removeClass('hidden');
+  }
+  
 })();
