@@ -92,6 +92,7 @@
   } else {
     spContainer.addClass('hidden');
     vidContainer.removeClass('hidden');
+    countdownImg.removeClass('hidden');
   }
   
 })();
